@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js animation</title>
+	<script>
+		var img=null;
+		var animate;
+		function init(){
+			img=document.getElementById("myImg");
+			img.style.position="relative";
+			img.style.left="0px";
+		}
+		function moveRight(){
+			img.style.left=parseInt(img.style.left)+10 + 'px';
+			animate=setTimeout(moveRight,20);
+		}
+		function stop(){
+			clearTimeout(animate);
+			img.style.left="0px";
+		}
+
+		window.onload=init;
+	</script>
+</head>
+<body>
+	<form>
+		<img src="b.jpg" id="myImg">
+		<input type="button"value="start"onclick="moveRight()">
+		<input type="button"value="stop"onclick="stop()">
+	</form>
+</body>
+</html></h1>

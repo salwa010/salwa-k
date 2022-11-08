@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>blood bank</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">BLOOD BANK</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> LOOKING FOR BLOOD</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> WANT TO DONATE BLOOD</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span>LOGIN</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> SIGN UP</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="fluid-container hero">
+	<img src="blood donation.png"id="myImage"class="center-block">
+	<h1 class="headline">GIVE BLOOD SAVE LIFE</h1>
+</div>
+<script>
+	var imgid=document.getElementById("myImage");
+	var hero=document.getElementById("hero");
+	var t1=new TimelineMax;
+	t1.fromTo(imgid,1,{height:"10%"},{height:"80%"});
+	t1.fromTo(imgid,1.2,{width:"8%"},{width:"50%"});
+	t1.fromTo(hero,2,{width:"20%"},{width:"100%"});
+</script>
+
+</body>
+</html>
